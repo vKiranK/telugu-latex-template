@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{polyglossia}
+\usepackage{hyperref}
+
+\setmainlanguage{english}
+\setotherlanguages{telugu}
+\newfontfamily\telugufont[Script=Telugu]{Noto Serif Telugu}
+
+\title{Telugu Document Template in \LaTeX}
+\author{vkirank (\url{vkirank.com})}
+\date{July 30, 2021}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+This is a sample document containing both Telugu and English text.
+Getting the Telugu language to work with \LaTeX is difficult, so I've uploaded this sample document (along with its source code) onto Github.
+Feel free to use it as a template for whatever you want.
+\section{Compiling Telugu Documents}
+To get Telugu to work with \LaTeX, you need to compile your .tex documents using XeLaTex.
+\textbf{Do NOT compile this file using pdflatex!!!} It won't work properly.
+To compile this .tex file, you should run the following command:
+\begin{verbatim}
+xelatex telugutest.tex
+\end{verbatim}
+\section{Sample Telugu Text}
+\begin{telugu}
+ఆదియందు దేవుడు భూమ్యాకాశములను సృజించెను.
+భూమి నిరాకారముగాను శూన్యముగాను ఉండెను; చీకటి అగాధ జలము పైన కమ్మియుండెను; దేవుని ఆత్మ జలములపైన అల్లాడుచుండెను.
+(\url{https://www.sajeevavahini.com/telugubible/})
+\linebreak
+౦ ౧ ౨ ౩ ౪ ౫ ౬ ౭ ౮ ౯
+\end{telugu}
+\end{document}
